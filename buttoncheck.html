@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="js/jquery-1.12.0.js" type="text/javascript" charset="utf-8"></script>
+		<script>
+			$(function(){			
+				$("#allcheck").click(function(){
+					if($("#allcheck")){
+						$(".btn").prop("checked","true");
+					}else{
+						$(".btn").removeProp("checked");
+					}
+				})
+			})
+		</script>
+	</head>
+	<body>
+		<input type="checkbox" id="eat" class="btn"/>吃饭
+		<input type="checkbox" id="sleep" class="btn"/>睡觉
+		<input type="checkbox" id="clickdata" class="btn"/>敲代码<br>
+		<input type="checkbox" id="allcheck"/>全选
+		<input type="checkbox" id="invcheck"/>反选
+	</body>
+</html>
